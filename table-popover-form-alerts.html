@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="containe-fluid">
+      <div class="container text-center">
+        <h1 class="text-secondary mb-5">Table</h1>
+
+        <h5>
+          jika kita ingin membuat table pada bootstrap yaitu cukup memberi class "table" pada tag TABLE,dan jika ingin memberi background pada table bisa di per baris ,satu table,atau perkolom saja. bisa juga memberi variaasi belang cukup
+          memberi class "table-striped" atau jika ingin memberi hover maka cukup membri class "table-hover" sebagai mana yang telah teraplikasi pada table di bawah ini dan masih bnyak style yang bisa di implementasikan tinggal kita lihat di
+          bootsrap TABLE.
+        </h5>
+        <h5 class="text-star">
+          kita bisa memberi garis pada table yg bisa kita ambil di bootstrap,dan bisa juga memberi warna garis table tsb. kita bisa memberi ukuran kecil pada table dg class "table-sm",dan kita bisa memberi responsive pada table dengan hanya
+          memberi class "table-responsive" pada div pembungkus table,maka dengan otomatis table kita menyesuaikan di semua display layar.
+        </h5>
+        <div class="table-responsive">
+          <table class="mx-auto table table-hover table-striped">
+            <thead class="table table-primary">
+              <th>NO</th>
+              <th>ANIME</th>
+              <th>GENRE</th>
+              <th>TAYANG</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1.</th>
+                <td>Konosubrashi S3</td>
+                <td>Action,Comedy,Adventure</td>
+                <td>Rabu</td>
+              </tr>
+              <tr>
+                <th>2.</th>
+                <td>kaijuu 8-gou</td>
+                <td>Action,adventure,Sci-fi</td>
+                <td>Sabtu</td>
+              </tr>
+              <tr>
+                <th>3.</th>
+                <td>Wind Breker</td>
+                <td>Action,Comedy,Drama</td>
+                <td>Jum'at</td>
+              </tr>
+              <tr>
+                <th>4.</th>
+                <td>My Hero Academia S7</td>
+                <td>Action,Adventure</td>
+                <td>Sabtu</td>
+              </tr>
+              <tr>
+                <th>5.</th>
+                <td>Mushoku Tensei S3</td>
+                <td>Actin,Drama,Ecci</td>
+                <td>Senin</td>
+              </tr>
+              <tr>
+                <th>6.</th>
+                <td>kimetsu No Yaiba s3</td>
+                <td>Action,Adventure,Drama</td>
+                <td>Senin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h1 class="text-primary text-center my-5">POPOVER</h1>
+        <h5 class="text-end mb-5">
+          Yaitu button yang menyimpan informasi yang apa bila kita klik akan muncul,kita bisa ambil Popover di bootsrap,dan kita perlu menambahkan tag script yg di dalamya "var popoverTriggerList =
+          [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]')) var popoverList = popoverTriggerList.map(function (popoverTriggerEl) { return new bootstrap.Popover(popoverTriggerEl) })" supaya POPOVER kita berjalan dan
+          perlu di ingat "data-bs-toggle="popover"harus sama antara di bootsrap dan di scripnya,"data-bs-placement="top" " jika kita ingin menggati munculnya informasi pada popover yaitu dengan menggati "top " dengan right,bottom,left,kita
+          juga bisa memberi title pada isi popover "title="aziz" ". Bisa juga jika kita ingin menutup POPOVER denga klik di bagiana mana saja dengan tanpa harus klik di buttonnya yaitu dengan cara tag "button" di ganti dengan tag "a" dan
+          menambahkan "tabindex="0" dan "data-bs-trigger="focus".
+        </h5>
+
+        <a
+          type="button"
+          class="btn btn-success my-5"
+          tabindex="0"
+          data-bs-trigger="focus"
+          data-bs-container="body"
+          data-bs-toggle="popover"
+          data-bs-placement="top"
+          title="aziz hanif abdillah"
+          data-bs-content="AZIZ itu orangnya sangat baik hati"
+          >klik disini pembuat situs ini.</a
+        >
+        <h2 class="text-center mb-5">DROPDOWN</h2>
+
+        <h5>untuk variasi dropdown bisa di lihat di bootstrap</h5>
+
+        <div class="dropend">
+          <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Dropdown button</button>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item active" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-dark text-light my-5">
+      <h1 class="text-center">Isi data dulu onichan !!!</h1>
+      <h5>
+        cara membuat form di bootsrap sama di html namun jika kita implementasikannya menggunakan bootsrap maka lebih bagus tinggal kita sedikit menambahi class contoh class "form-control" untuk membuat input text bisa memenuhi containernya
+        form-control yaitu untuk ukuran defaultnya jika kita ingin membuat lebih besar maka perlu menambahkan class"form-control-lg" jika ingin lebih kecil "fom-control-sm" ada juga class "form-text" yaitu untuk memberi tulisan kecil
+        disable di bawah input atau sebagai keterangan,kemudian ada "form-label"untuk memberi jarak sama lebel ,dan ada class untuk select box agar select box kita menarik yaitu dg menambah kan class "form-select" pada tag "select" dan bisa
+        membuat input-grup seperti yg ada di bawah ini.ada juga untuk radio dan bnyak macamnya bisa di liat di bootstap.
+      </h5>
+      <div class="container col-8 offset-2 py-3">
+        <div class="alerts alert-success" id="myAlert">log-in done</div>
+
+        <form class="py-5">
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="nama" class="form-label">USER NAME</label>
+              <input type="text" id="nama" class="form-control form-control-sm" />
+            </div>
+            <div class="col-6">
+              <label for="anime" class="form-label"> NAMA ISEKAI</label>
+              <input type="text" id="anime" class="form-control" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <div class="input-group">
+              <input type="text" name="email" id="email" class="form-control" />
+              <span class="input-group-text">@</span>
+              <input type="text" name="email" id="email" class="form-control" />
+              <span class="input-group-text">.com</span>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="pasword" class="form-label"> PASSWORD ISEKAI</label>
+            <input type="password" id="pasword" class="form-control" />
+            <label class="form-text">*password minimal 8 huruf atau lebih</label>
+            <div class="mb-3">
+              <label for="select" class="form-label">JENIS KELAMIN</label>
+              <select name="select" class="form-select" id="select">
+                <option value="laki-laki">laki-laki</option>
+                <option value="perempuan">perempuan</option>
+                <option value="maho">maho</option>
+              </select>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+              <label class="form-check-label" for="flexRadioDefault1"> SETUJU </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+              <label class="form-check-label" for="flexRadioDefault2"> TIDAK SETUJU </label>
+            </div>
+
+            <div class="mb-3">
+              <label for="textarea" class="form-label">🤖 Kata-Kata Mutiara lord Kazuma !!</label>
+
+              <textarea class="form-control" id="textare"></textarea>
+            </div>
+            <input class="btn btn-success form-control" type="submit" onclick="myFunction()" value="kirim" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+
+      var myAlerts = document.getElementById("myAlert");
+
+      myAlerts.style.display = "none";
+
+      function myFunction() {
+        myAlerts.style.display = "blok";
+      }
+    </script>
+  </body>
+</html>
